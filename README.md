@@ -59,19 +59,6 @@
 
 ###
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/pacman-output/galaga-contribution-graph-dark.svg?game=galaga"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/pacman-output/galaga-contribution-graph.svg?game=galaga"
-  />
-  <img
-    src="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/pacman-output/galaga-contribution-graph.svg?game=galaga"
-    alt="Pacman contribution graph"
-  />
-</picture>
+<img data-importer="snake" src="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/snake-output/snake.svg" alt="Snake animation" />
 
 ###
