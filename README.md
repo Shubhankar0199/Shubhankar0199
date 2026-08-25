@@ -69,8 +69,8 @@
     srcset="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/pacman-output/galaga-contribution-graph.svg?game=galaga"
   />
   <img
-    alt="Pacman contribution graph"
     src="https://raw.githubusercontent.com/Shubhankar0199/Shubhankar0199/pacman-output/galaga-contribution-graph.svg?game=galaga"
+    alt="Pacman contribution graph"
   />
 </picture>
 
