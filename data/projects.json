@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "Sentiment Analysis System",
+      "repo": "Shubhankar0199/Sentiment_analysis_system",
+      "description": "NLP-based sentiment classification using TF-IDF and Logistic Regression.",
+      "technologies": ["Python", "Flask", "scikit-learn", "NLTK"]
+    },
+    {
+      "name": "MedCode AI",
+      "repo": "Shubhankar0199/Medcode_AI",
+      "description": "AI-powered assistant for clinical text analysis and ICD-10-CM coding support.",
+      "technologies": ["Python", "AI", "NLP", "FastAPI"]
+    },
+    {
+      "name": "Resume Analyzer",
+      "repo": "Shubhankar0199/resume-analyser",
+      "description": "AI-powered resume and job-description matching system.",
+      "technologies": ["Python", "FastAPI", "NLP", "LLM"]
+    },
+    {
+      "name": "AI Assistant v1",
+      "repo": "Shubhankar0199/AI-assistant-v-1",
+      "description": "AI-powered personal assistant application.",
+      "technologies": ["Python", "AI", "LLM", "Assistant Automation"]
+    }
+  ]
+}
