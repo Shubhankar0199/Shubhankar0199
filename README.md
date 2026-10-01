@@ -2,16 +2,18 @@
   <img src="assets/portrait.svg" width="300" alt="Dot matrix portrait of Shubhankar Pratap Singh" />
 </p>
 
-<h1 align="center">SHUBHANKAR PRATAP SINGH</h1>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=34&duration=2600&pause=1200&color=39D353&center=true&vCenter=true&width=800&height=60&lines=SHUBHANKAR+PRATAP+SINGH;AI+%2F+ML+Developer;Python+%7C+Java+%7C+SQL;Machine+Learning+%26+NLP;Backend+%26+AI+Applications;01100011+01101111+01100100+01100101" alt="Shubhankar Pratap Singh" />
+</p>
+
 <p align="center"><b>Computer Science Undergraduate</b></p>
 <p align="center">AI / ML • Software Development • Python • Java • SQL • DSA</p>
 
 <p align="center">
   <a href="https://github.com/Shubhankar0199">GitHub</a> ·
-  <a href="YOUR_LINKEDIN_URL">LinkedIn</a> ·
-  <a href="YOUR_LEETCODE_URL">LeetCode</a> ·
-  <a href="YOUR_PORTFOLIO_URL">Portfolio</a> ·
-  <a href="mailto:YOUR_EMAIL">Email</a>
+  <a href="https://www.linkedin.com/in/shubhankar-pratap-singh11/">LinkedIn</a> ·
+  <a href="https://leetcode.com/u/Shubhankar_Pratap_Singh/">LeetCode</a> ·
+  <a href="mailto:sshubhankar655@gmail.com">Email</a>
 </p>
 
 <p align="center">
