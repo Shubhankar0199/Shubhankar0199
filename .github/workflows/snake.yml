@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate contribution snake
         uses: Platane/snk@v3
@@ -24,8 +26,22 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish snake
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "dist/"
-          message: "Update contribution snake"
+      - name: Check generated files
+        run: |
+          pwd
+          git status
+          ls -la
+          ls -la dist
+
+      - name: Commit and push snake
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh contribution snake"
+            git push
+          fi
