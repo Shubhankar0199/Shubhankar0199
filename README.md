@@ -68,9 +68,9 @@ development, data structures, and problem solving.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/snake.svg" />
-    <img src="assets/snake.svg" width="820" alt="GitHub contribution snake" />
+    <source media="(prefers-color-scheme: dark)" srcset="dist/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="dist/github-contribution-grid-snake.svg" />
+    <img src="dist/github-contribution-grid-snake.svg" width="820" alt="GitHub contribution snake" />
   </picture>
 </p>
 
