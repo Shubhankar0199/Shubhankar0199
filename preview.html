@@ -1,26 +1,622 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shubhankar — GitHub Profile Preview</title>
-<style>
-:root{color-scheme:dark;--bg:#0d1117;--panel:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;--green:#39d353;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;line-height:1.6}.wrap{max-width:1050px;margin:auto;padding:42px 24px}.hero{text-align:center}.hero img{width:300px;max-width:80%;filter:drop-shadow(0 0 22px rgba(57,211,83,.15))}.hero h1{letter-spacing:.08em}.green{color:var(--green)}.muted{color:var(--muted)}a{color:var(--link)}section{margin:42px 0}.terminal{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;overflow:auto}h2{font-size:18px;color:var(--green)}.center{text-align:center}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--panel)}.card img{width:100%;display:block}.radar{max-width:520px;width:100%}@media(max-width:760px){.grid{grid-template-columns:1fr}}
-</style></head><body><main class="wrap">
-<div class="hero"><img id="portrait" src="assets/portrait.svg" alt="Portrait"><h1>SHUBHANKAR PRATAP SINGH</h1><div>Computer Science Undergraduate</div><div class="green">AI / ML • Software Development • Python • Java • SQL • DSA</div></div>
-<section><h2>~/ whoami</h2><pre class="terminal">$ whoami
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Shubhankar — GitHub Profile Preview</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --green: #39d353;
+      --link: #58a6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: auto;
+      padding: 42px 24px;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero > img {
+      width: 300px;
+      max-width: 80%;
+      filter: drop-shadow(
+        0 0 22px rgba(57, 211, 83, 0.15)
+      );
+    }
+
+    .hero h1 {
+      letter-spacing: 0.08em;
+      margin: 20px 0 10px;
+    }
+
+    /* =========================
+       TYPING BANNER
+    ========================== */
+
+    .typing-banner {
+      margin: 18px auto 12px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .typing-banner img {
+      width: 700px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* =========================
+       SOCIAL LINKS
+    ========================== */
+
+    .social-links {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .social-links a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--green);
+    }
+
+    /* =========================
+       PROFILE VIEWS
+    ========================== */
+
+    .profile-views {
+      margin-top: 15px;
+    }
+
+    /* =========================
+       GENERAL
+    ========================== */
+
+    .green {
+      color: var(--green);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    section {
+      margin: 42px 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* =========================
+       TERMINAL
+    ========================== */
+
+    .terminal {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    /* =========================
+       TOOLBOX
+    ========================== */
+
+    .toolbox {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .toolbox img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .toolbox-tags {
+      margin-top: 15px;
+    }
+
+    .toolbox-tags code {
+      color: var(--green);
+      border: 1px solid var(--border);
+      background: var(--panel);
+      padding: 5px 8px;
+      border-radius: 6px;
+      margin: 3px;
+      display: inline-block;
+    }
+
+    /* =========================
+       RADAR
+    ========================== */
+
+    .radar {
+      max-width: 520px;
+      width: 100%;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel);
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--green);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       BUTTON
+    ========================== */
+
+    button {
+      background: var(--panel);
+      color: var(--green);
+      border: 1px solid var(--green);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #1f2933;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      margin-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 760px) {
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .wrap {
+        padding: 30px 16px;
+      }
+
+      .typing-banner img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="wrap">
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <div class="hero">
+
+      <!-- Dot Matrix Portrait -->
+      <img
+        id="portrait"
+        src="assets/portrait.svg"
+        alt="Dot matrix portrait of Shubhankar Pratap Singh"
+      >
+
+      <!-- Name -->
+      <h1>
+        SHUBHANKAR PRATAP SINGH
+      </h1>
+
+      <!-- Animated Typing Banner -->
+      <div class="typing-banner">
+
+        <img
+          src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=700&lines=Shubhankar+Pratap+Singh;AI+%2F+ML+Developer;Python+%7C+Java+%7C+SQL;Machine+Learning+%26+NLP;Backend+%26+AI+Applications;01100011+01101111+01100100+01100101"
+          alt="Typing banner"
+        >
+
+      </div>
+
+
+      <!-- Social Links -->
+      <div class="social-links">
+
+        <a
+          href="https://github.com/Shubhankar0199"
+          target="_blank"
+        >
+          GitHub
+        </a>
+
+        ·
+
+        <a
+          href="https://www.linkedin.com/in/shubhankar-pratap-singh11/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+
+        ·
+
+        <a
+          href="https://leetcode.com/u/Shubhankar_Pratap_Singh/"
+          target="_blank"
+        >
+          LeetCode
+        </a>
+
+        ·
+
+        <a
+          href="mailto:sshubhankar655@gmail.com"
+        >
+          Email
+        </a>
+
+      </div>
+
+
+      <!-- Profile Views -->
+      <div class="profile-views">
+
+        <img
+          src="https://komarev.com/ghpvc/?username=Shubhankar0199&label=PROFILE+VIEWS&color=39d353&style=flat-square"
+          alt="Profile views"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================
+         WHO AM I
+    ====================================== -->
+
+    <section>
+
+      <h2>
+        ~/ whoami
+      </h2>
+
+      <pre class="terminal">$ whoami
 Shubhankar Pratap Singh
 Computer Science Undergraduate
 AI / ML • Software Development
 
 $ cat about.txt
 Building practical software and AI-powered applications while strengthening
-machine learning, backend development, DSA, and programming fundamentals.</pre></section>
-<section><h2>~/ toolbox</h2><div class="center"><img src="https://skillicons.dev/icons?i=python,java,cpp,mysql,html,css,js,git,github,vscode,flask,fastapi,streamlit,numpy,pandas,sklearn" alt="Toolbox"></div></section>
-<section><h2>~/ skill radar</h2><div class="center"><img class="radar" src="assets/radar-dark.svg" alt="Skill radar"></div></section>
-<section><h2>~/ selected work</h2><div class="grid"><a class="card" href="https://github.com/Shubhankar0199/Sentiment_analysis_system"><img src="assets/project-sentiment-dark.svg"></a><a class="card" href="https://github.com/Shubhankar0199/Medcode_AI"><img src="assets/project-medcode-dark.svg"></a><a class="card" href="https://github.com/Shubhankar0199/resume-analyser"><img src="assets/project-resume-dark.svg"></a><a class="card" href="https://github.com/Shubhankar0199/AI-assistant-v-1"><img src="assets/project-assistant-dark.svg"></a></div></section>
-<section><h2>~/ currently building</h2><pre class="terminal">$ git status
+machine learning, backend development, DSA, and programming fundamentals.
+
+&gt; Currently developing AI/ML projects
+&gt; Learning software engineering through practical projects
+&gt; Exploring machine learning and AI
+&gt; Strengthening DSA and programming fundamentals
+&gt; Seeking internships and real-world opportunities</pre>
+
+    </section>
+
+
+    <!-- =====================================
+         TOOLBOX
+    ====================================== -->
+
+    <section>
+
+      <h2>
+        ~/ toolbox
+      </h2>
+
+      <div class="toolbox">
+
+        <img
+          src="https://skillicons.dev/icons?i=python,java,cpp,mysql,html,css,js,git,github,vscode,flask,fastapi,streamlit,numpy,pandas,sklearn"
+          alt="Technology toolbox"
+        >
+
+        <div class="toolbox-tags">
+
+          <code>Machine Learning</code>
+          <code>Artificial Intelligence</code>
+          <code>NLP</code>
+          <code>REST APIs</code>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         SKILL RADAR
+    ====================================== -->
+
+    <section>
+
+      <h2>
+        ~/ skill radar
+      </h2>
+
+      <div class="center">
+
+        <img
+          class="radar"
+          src="assets/radar-dark.svg"
+          alt="Self-assessed skill radar"
+        >
+
+      </div>
+
+      <p class="center muted">
+        Self-assessed skill levels — not objective or
+        industry-certified scores.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================
+         SELECTED WORK
+    ====================================== -->
+
+    <section>
+
+      <h2>
+        ~/ selected work
+      </h2>
+
+      <div class="grid">
+
+        <!-- Sentiment Analysis -->
+
+        <a
+          class="card"
+          href="https://github.com/Shubhankar0199/Sentiment_analysis_system"
+          target="_blank"
+        >
+
+          <img
+            src="assets/project-sentiment-dark.svg"
+            alt="Sentiment Analysis System"
+          >
+
+        </a>
+
+
+        <!-- MedCode AI -->
+
+        <a
+          class="card"
+          href="https://github.com/Shubhankar0199/Medcode_AI"
+          target="_blank"
+        >
+
+          <img
+            src="assets/project-medcode-dark.svg"
+            alt="MedCode AI"
+          >
+
+        </a>
+
+
+        <!-- Resume Analyzer -->
+
+        <a
+          class="card"
+          href="https://github.com/Shubhankar0199/resume-analyser"
+          target="_blank"
+        >
+
+          <img
+            src="assets/project-resume-dark.svg"
+            alt="Resume Analyzer"
+          >
+
+        </a>
+
+
+        <!-- AI Assistant -->
+
+        <a
+          class="card"
+          href="https://github.com/Shubhankar0199/AI-assistant-v-1"
+          target="_blank"
+        >
+
+          <img
+            src="assets/project-assistant-dark.svg"
+            alt="AI Assistant v1"
+          >
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CURRENTLY BUILDING
+    ====================================== -->
+
+    <section>
+
+      <h2>
+        ~/ currently building
+      </h2>
+
+      <pre class="terminal">$ git status
 AI / ML projects
 Resume intelligence
 NLP applications
 Software engineering projects
-Developer tooling</pre></section>
-<section class="center"><button id="replay">Replay portrait animation</button></section>
-<footer class="center muted">Building • Learning • Shipping</footer>
-</main><script>document.getElementById('replay').onclick=()=>{const i=document.getElementById('portrait');i.src='';setTimeout(()=>i.src='assets/portrait.svg',30)};</script></body></html>
+Developer tooling
+
+$ focus --now
+machine learning
+backend development
+DSA
+AI application development
+Git/GitHub workflow
+deployment skills</pre>
+
+    </section>
+
+
+    <!-- =====================================
+         REPLAY PORTRAIT
+    ====================================== -->
+
+    <section class="center">
+
+      <button id="replay">
+        Replay portrait animation
+      </button>
+
+    </section>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="center muted">
+
+      <p>
+        <code>$ echo "thanks for scrolling"</code>
+      </p>
+
+      <p>
+        <code>
+          01110100 01101000 01100001 01101110 01101011 01110011
+        </code>
+      </p>
+
+      <p>
+        <b>
+          Building • Learning • Shipping
+        </b>
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- =====================================
+       JAVASCRIPT
+  ====================================== -->
+
+  <script>
+
+    document
+      .getElementById("replay")
+      .onclick = () => {
+
+        const image =
+          document.getElementById("portrait");
+
+        image.src = "";
+
+        setTimeout(() => {
+
+          image.src =
+            "assets/portrait.svg";
+
+        }, 30);
+
+      };
+
+  </script>
+
+</body>
+
+</html>
